@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext, useNavigate } from "react-router-dom";
 import { t } from "../i18n.js";
-
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000";
+import { API_BASE } from "../config.js";
 
 function formatBytes(bytes) {
   if (!bytes || bytes === 0) return "0 B";

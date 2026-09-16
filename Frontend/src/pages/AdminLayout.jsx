@@ -4,9 +4,8 @@ import Sidebar from "./Sidebar.jsx";
 import Topbar from "./Topbar.jsx";
 import UploadFile from "./UploadFile.jsx";
 import { t } from "../i18n.js";
+import { API_BASE } from "../config.js";
 import "./AdminDashboard.css";
-
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000";
 
 const ROLE_AVATAR_COLOR = {
   "Super Admin": "#2563eb",

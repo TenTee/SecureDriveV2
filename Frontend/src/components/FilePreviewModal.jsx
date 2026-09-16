@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000";
+import { API_BASE } from "../config.js";
 
 export default function FilePreviewModal({ fileKey, fileName, onClose }) {
   const [loading, setLoading] = useState(true);

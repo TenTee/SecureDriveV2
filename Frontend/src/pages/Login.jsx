@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { t, getLang, setLang } from "../i18n.js";
+import { API_BASE } from "../config.js";
 import "./Login.css";
-
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000";
 
 function langBtnStyle(active) {
   return {
